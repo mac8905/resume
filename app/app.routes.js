@@ -4,8 +4,14 @@ angular
 
 function AppRouter($routeProvider) {
     $routeProvider.when('/', {
-        templateUrl: 'views/resume/personal.html',
-        controller: 'PersonalController',
-        controllerAs: 'personal'
+        templateUrl: 'views/resume/generalInformation.html',
+        controller: 'GeneralInformationController',
+        controllerAs: 'generalInformation'
+    });
+    
+    $routeProvider.when('/generalInformation', {
+        templateUrl: 'views/resume/generalInformation.html',
+        controller: 'GeneralInformationController',
+        controllerAs: 'generalInformation'
     });
 }
