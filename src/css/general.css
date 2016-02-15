@@ -4,7 +4,67 @@ html {
 }
 
 body {
-    background-image: url('../img/background.jpg');
+    background-attachment: fixed;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/background.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.border-white {
+    border: 1px solid white;
+}
+
+.cell {
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+.cell > div {
+    width:95%;
+}
+
+.cell > i {
+    font-size: 50px;
+    color: red;
+    margin-left: 5%;
+    width:5%;
+}
+
+.center-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-white {
+    color: white;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.tab{
+    background-color: transparent;
+    border: 1px solid white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.tab-content {
+    color: white;
+}
+
+.tab-group {
+    /*border: 1px solid white;*/
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* sirve para ajustar los elementos cuando se cambia el tamaño de la página*/
+    justify-content: center;
 }

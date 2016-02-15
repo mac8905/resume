@@ -1,21 +1,19 @@
 angular
     .module('appResume')
-    .service('$SectionService', SectionService);
+    .service('$GeneralInformationService', GeneralInformationService);
 
-function SectionService($http, $q) {
-    var section = null;
+function GeneralInformationService($http, $q) {
     var service = {
-        section: section,
-        getSections: getSections
+        getGeneralInformation: getGeneralInformation
     };
     
     return service;
     
-    function getSections() {
+    function getGeneralInformation() {
         var request = $http({
             data: {all: 'all'},
             method: "POST",
-            url: 'controller/section.class.php'
+            url: 'controller/generalInformation.class.php'
         });
         
         return (request.then(handleSuccess, handleError));

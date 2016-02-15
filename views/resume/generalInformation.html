@@ -1,1 +1,163 @@
-<span data-ng-bind="generalInformation.name"></span>
+<div data-ng-init="gein.init()">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="cell border-white center-all">
+                <span data-ng-bind="gein.section.label"></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="cell border-white center-all">
+                <i class="fa fa-user"></i>
+                
+                <div class="center-all direction-column">
+                    <strong>Nombres</strong>
+                    <span>
+                        {{gein.generalInformation.name}}
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="cell border-white center-all">
+                <i class="fa fa-user"></i>
+                
+                <div class="center-all direction-column">
+                    <strong>Apellidos</strong>
+                    </span>
+                    <span>
+                        {{gein.generalInformation.lastname}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="cell border-white center-all">
+                <i class="fa fa-globe"></i>
+                
+                <div class="center-all direction-column">
+                    <strong>Dirección</strong>
+                    <span>
+                        {{gein.generalInformation.address}}
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="cell border-white center-all">
+                <i class="fa fa-globe"></i>
+                
+                <div class="center-all direction-column">
+                    <strong>Ciudad</strong>
+                    <span>
+                        {{gein.generalInformation.city}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="cell border-white center-all">
+                <i class="fa fa-mobile"></i>
+                
+                <div class="center-all direction-column">
+                    <strong>Fijo</strong>
+                    <span>
+                        {{gein.generalInformation.telephone}}
+                    </span>
+                </div>
+            </div>
+        </div>
+            
+        <div class="col-sm-4">
+            <div class="cell border-white center-all">
+                <i class="fa fa-mobile"></i>
+                    
+                <div class="center-all direction-column">
+                    <strong>Móvil</strong>
+                    <span>
+                        {{gein.generalInformation.mobile}}
+                    </span>    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="cell border-white center-all">
+                <i class="fa fa-hashtag"></i>
+                
+                <div class="center-all direction-column">
+                    <strong>Documento de identificación</strong>
+                    <span>
+                        {{gein.generalInformation.document}}
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="cell border-white center-all">
+                <i class="fa fa-calendar-o"></i>
+                
+                <div class="center-all direction-column">
+                    <strong>Lugar y fecha de nacimiento</strong>
+                    <span>
+                        {{gein.generalInformation.birthday}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="cell border-white center-all">
+                <i class="fa fa-envelope-o"></i>
+                
+                <div class="center-all direction-column">
+                    <strong>Correo electrónico</strong>
+                    <span>
+                        {{gein.generalInformation.email}}
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="cell border-white center-all">
+                <i class="fa fa-home"></i>
+                
+                <div class="center-all direction-column">
+                    <strong>Estado civil</strong>
+                    <span>
+                        {{gein.generalInformation.marital_status}}
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="cell border-white center-all">
+                <i class="fa fa-male"></i>
+                
+                <div class="center-all direction-column">
+                    <strong>Género</strong>
+                    <span>
+                        {{gein.generalInformation.gender}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

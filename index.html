@@ -5,23 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title data-ng-bind="main.title"></title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/general.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" data-ng-repeat="section in main.sectionList">
-                <a href="#{{section.name}}" aria-controls="{{section.name}}" role="tab" data-toggle="tab">{{section.label}}</a>
-            </li>
-            
-        </ul>
-        
-        <!-- Tab panes -->
-        <div class="tab-content">
+    <div class="container">
+        <br>
+        <!--INI PESTAÑAS-->
+        <div class="row tab-group">
+            <button 
+                class="tab"
+                data-ng-click="main.go(section)"
+                data-ng-repeat="section in main.sectionList">
+                    <span class="color-white">{{section.label}}</span>
+            </button>
+        </div>
+        <!--FIN PESTAÑAS-->
+
+        <!--INI CONTENIDO PESTAÑAS-->
+        <div class="row tab-content">
             <div data-ng-view></div>
         </div>
+        <!--FIN CONTENIDO PESTAÑAS -->
     </div>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -30,8 +37,13 @@
     <script type="text/javascript" src="https://code.angularjs.org/1.5.0/angular-route.min.js"></script>
     <script type="text/javascript" src="app/app.module.js"></script>
     <script type="text/javascript" src="app/app.routes.js"></script>
-    <script type="text/javascript" src="app/controllers/main.controller.js"></script>
+    <script type="text/javascript" src="app/controllers/academicTraining.controller.js"></script>
+    <script type="text/javascript" src="app/controllers/familyInformation.controller.js"></script>
     <script type="text/javascript" src="app/controllers/generalInformation.controller.js"></script>
+    <script type="text/javascript" src="app/controllers/main.controller.js"></script>
+    <script type="text/javascript" src="app/controllers/profile.controller.js"></script>
+    <script type="text/javascript" src="app/controllers/workExperience.controller.js"></script>
     <script type="text/javascript" src="app/services/section.service.js"></script>
+    <script type="text/javascript" src="app/services/generalInformation.service.js"></script>
 </body>
 </html>
